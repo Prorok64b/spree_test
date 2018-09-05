@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180905200414) do
+ActiveRecord::Schema.define(version: 20180905200909) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -426,6 +426,8 @@ ActiveRecord::Schema.define(version: 20180905200414) do
     t.string "meta_title"
     t.datetime "discontinue_on"
     t.float "price"
+    t.integer "stock_total"
+    t.string "category"
     t.index ["available_on"], name: "index_spree_products_on_available_on"
     t.index ["deleted_at"], name: "index_spree_products_on_deleted_at"
     t.index ["discontinue_on"], name: "index_spree_products_on_discontinue_on"
