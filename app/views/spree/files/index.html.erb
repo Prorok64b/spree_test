@@ -1,0 +1,6 @@
+<h1>files</h1>
+
+<%= form_tag upload_csv_files_path, method: :post, multipart: true do %>
+    <%= file_field_tag :file_csv %> <br>
+    <%= submit_tag :send %>
+<% end %>
