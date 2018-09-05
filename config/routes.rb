@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   Spree::Core::Engine.routes.draw do
     resource :files do
       get  :index
-      post :upload_csv
+      post :upload_product_csv
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

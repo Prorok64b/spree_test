@@ -1,11 +1,10 @@
 class Spree::FilesController < ApplicationController
     def index
-    
     end
 
-    def upload_csv
-        ImportCSV.new(file_path)
-
+    def upload_product_csv
+        return redirect_to :index unless file_path
+        Import::ImportCSV.run(file_path)
     end
 
     private
