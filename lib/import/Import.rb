@@ -1,4 +1,4 @@
-class Import::Iimport
+class Import::Import
 
     def initialize(file_path)
         raise "#{__method__.to_s} needs implementation"
